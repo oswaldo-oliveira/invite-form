@@ -19,6 +19,7 @@ main {
     h2 {
       font: var(--text-heading-md);
       color: var(--text-heading);
+      margin-bottom: 40px;
     }
   }
 }
@@ -45,6 +46,7 @@ aside {
 
     p {
       font: var(--text-body-md);
+      font-weight: lighter;
       color: var(--text-heading);
     }
   }

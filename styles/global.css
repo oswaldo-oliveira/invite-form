@@ -55,4 +55,18 @@
 body {
   background-color: var(--shape-background);
   overflow: hidden;
+  font-family: var(--text-body-md);
+  color: var(--text-body);
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
 }
