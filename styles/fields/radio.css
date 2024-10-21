@@ -1,4 +1,4 @@
-.radio-wrapper {
+.segmented-control-wrapper {
   padding: 0.25rem;
   gap: 0.25rem;
 
@@ -8,7 +8,7 @@
   background-color: var(--input-base);
 }
 
-.radio-inner {
+.segmented-control-inner {
   cursor: pointer;
   padding: 0.65625rem 1.125rem;
 
@@ -29,7 +29,7 @@
   }
 }
 
-.radio-inner:has(:checked) {
+.segmented-control-inner:has(:checked) {
   background-color: var(--input-stroke);
   border-radius: 4px;
 
@@ -37,5 +37,84 @@
 
   svg path {
     fill: var(--brand-light);
+  }
+}
+
+.color-selection-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-selection-inner {
+  display: flex;
+  cursor: pointer;
+
+  label span {
+    display: block;
+    border: 4px solid var(--shape-button);
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+  }
+
+  label span:hover {
+    border: 4px solid var(--shape-hover);
+  }
+
+  .brand-light {
+    background-color: var(--brand-light);
+  }
+
+  .navy {
+    background-color: var(--navy);
+  }
+
+  .purple {
+    background-color: var(--purple);
+  }
+
+  .fuschia {
+    background-color: var(--fuschia);
+  }
+
+  .pink {
+    background-color: var(--pink);
+  }
+
+  .red {
+    background-color: var(--danger);
+  }
+
+  .orange {
+    background-color: var(--orange);
+  }
+
+  .yellow {
+    background-color: var(--yellow);
+  }
+
+  .lime {
+    background-color: var(--lime);
+  }
+
+  .green {
+    background-color: var(--green);
+  }
+
+  .cyan {
+    background-color: var(--cyan);
+  }
+
+  & input,
+  & input:focus,
+  & input:hover,
+  label {
+    all: unset;
+  }
+}
+
+.color-selection-inner:has(:checked) {
+  label span {
+    outline: 2px solid var(--brand-light);
   }
 }
