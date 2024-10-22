@@ -70,3 +70,11 @@ body {
 .flex-1 {
   flex: 1;
 }
+
+.item-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
