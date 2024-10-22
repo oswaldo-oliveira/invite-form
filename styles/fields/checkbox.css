@@ -56,3 +56,34 @@
     background-color: var(--text-heading);
   }
 }
+
+.terms-wrapper {
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  label {
+    font: var(--text-body-sm);
+    color: var(--text-body);
+
+    a {
+      font-weight: 600;
+      color: var(--brand-light);
+    }
+  }
+}
+
+.checkbox-image {
+  flex: 0 0 1.25rem;
+  height: 1.25rem;
+  background-image: url(../../assets/icons/checkbox.svg);
+}
+
+.checkbox-inner:has(:checked) .checkbox-image {
+  background-image: url(../../assets/icons/checkbox-checked.svg);
+}

@@ -29,3 +29,8 @@ legend {
     width: 24px;
   }
 }
+
+.contact-data {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--input-stroke);
+}
