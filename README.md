@@ -2,7 +2,7 @@
   <img src="assets/image.png" alt="Project Name">
 </p>
 
-# Portfolio Dev
+# Festivite
 This project is to learn HTML and CSS.
 
 ## Tech Stack
