@@ -118,3 +118,47 @@
     outline: 2px solid var(--brand-light);
   }
 }
+
+.theme-selection-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0.5rem;
+}
+
+.theme-selection-inner {
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding-inline: 4px;
+  padding-top: 4px;
+
+  border-radius: 8px;
+  border: 2px solid transparent;
+
+  text-align: center;
+
+  background-color: var(--shape-button);
+
+  img {
+    border-radius: 4px;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover,
+  label {
+    all: unset;
+  }
+}
+
+.theme-selection-inner:hover {
+  background-color: var(--shape-hover);
+}
+
+.theme-selection-inner:has(:checked) {
+  border: 2px solid var(--brand-light);
+}
