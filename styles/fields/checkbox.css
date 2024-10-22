@@ -84,6 +84,26 @@
   background-image: url(../../assets/icons/checkbox.svg);
 }
 
+label + .checkbox-inner {
+  label::before {
+    content: "Escuro";
+  }
+}
+
 .checkbox-inner:has(:checked) .checkbox-image {
   background-image: url(../../assets/icons/checkbox-checked.svg);
+}
+
+label + .checkbox-inner:has(:checked) {
+  position: relative;
+
+  label::before {
+    content: "";
+  }
+
+  label::after {
+    content: "Claro";
+    position: absolute;
+    top: 0.5rem;
+  }
 }

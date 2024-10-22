@@ -1,0 +1,22 @@
+.submit-button {
+  justify-content: flex-end;
+}
+
+button {
+  margin-top: 3rem;
+  padding: 0.875rem 1.25rem;
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--brand-dark);
+
+  img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  span {
+    font: var(--text-body-md);
+    font-weight: 600;
+    color: var(--text-heading);
+  }
+}

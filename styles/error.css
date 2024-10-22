@@ -1,0 +1,27 @@
+.error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  margin-top: 0.5rem;
+
+  font: var(--text-body-xs);
+  color: var(--danger);
+
+  svg {
+    height: 1rem;
+    width: 1rem;
+
+    path {
+      fill: var(--danger);
+    }
+  }
+}
+
+input:invalid {
+  border: 2px solid var(--danger);
+}
+
+input:valid + .error {
+  display: none;
+}
